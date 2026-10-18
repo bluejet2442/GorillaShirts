@@ -1,0 +1,36 @@
+GorillaShirts standalone fork
+
+Base: developer9998/GorillaShirts, revision 943486c, as recorded in the
+supplied compatibility notes. This revision was prepared with AI assistance.
+Upstream: https://github.com/developer9998/GorillaShirts
+License: GPL-3.0; see LICENSE and the credits in README.md.
+
+Compatibility changes carried forward
+- Uses GorillaIK clothing anchors with head, body, shoulder, and forearm fallbacks.
+- Removes the GorillaLibrary dependency; BepInEx is still required.
+- Adds no Utilla dependency.
+- Keeps the BoingKit and Unity.Collections references from the supplied fork.
+- Copies build output into the game only when DeployToGame=true.
+- Keeps plugin ID dev.gorillashirts and internal version 2.4.7.
+
+This revision
+See CHANGES.md for settings, rig cleanup, network, and download fixes.
+The internal version does not distinguish this DLL from earlier 2.4.7 builds.
+Use the delivered checksums to identify it.
+
+Validation
+See VALIDATION.md for checks run on this revision. Earlier compatibility notes
+reported 111 resolved member references and matching embedded resources; those
+historical results are not a fresh validation of this revision.
+No in-game testing has been performed for this revision.
+
+Manual checks still needed
+1. Start Gorilla Tag and check the stand and installed packs.
+2. Wear head, body, arm, and hand items; check wobble physics and custom colours.
+3. Change the name-tag offset and restart to check saved preferences.
+4. Join a room with another mod user, change outfits, then leave and rejoin.
+5. Check the BepInEx log for errors and verify behaviour without internet access.
+
+Install only after backing up the existing DLL outside BepInEx/plugins.
+If you test without GorillaLibrary, remember that other mods may still need it.
+To roll back, close the game and restore your backed-up DLL.

@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/33642958/README.md)
 # GorillaShirts — standalone fork
 
 GorillaShirts adds community-made shirts to Gorilla Tag. Use the Shirt Stand in supported maps to choose shirts, browse packs, change colours, and adjust your name tag.
